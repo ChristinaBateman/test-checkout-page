@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'PT Root UI';
+    font-weight: bold;
+    src:  url('../fonts/PT-Root-UI_Regular.woff2') format('woff2'),
+          url('../fonts/PT-Root-UI_Regular.woff') format('woff');
+  }
+
+
+  @font-face {
+    font-family: 'PT Root UI medium';
+    src:  url('../fonts/PT-Root-UI_Medium.woff2') format('woff2'),
+          url('../fonts/PT-Root-UI_Medium.woff') format('woff');
+  }
+
+
+
+  @font-face {
+    font-family: 'PT Root UI bold';
+    src:  url('../fonts/PT-Root-UI_Bold.woff2') format('woff2'),
+          url('../fonts/PT-Root-UI_Bold.woff') format('woff');
+  }
+
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'PT Root UI';
+    padding: 0;
+    margin: 0;
+}
+
+html, body, .page {
+    height: 100%;
+}
+
+
+.page {
+    /* position: relative; */
+    padding: 48px 85px 0 77px;
+    background-color: #F2F2F2;
+}
+
+
+.page h1 {
+    margin-left: 42px;
+    margin-top: 2px;
+    font-family: 'PT Root UI medium';
+    font-size: 35px;
+    line-height: 44px;
+    color: #333333;
+}
+
+.checkout {
+    max-width: 1743px;
+    display: flex;
+    margin-top: 19px;
+    background: #FFFFFF;
+    border: 1px solid #C5C5C5;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+.checkout .left-block {
+    flex: 1;
+    padding: 40px 82px 0 43px;
+    border-right: 1px solid #8C8C8C;
+}
+
+.checkout .right-block {
+    flex: 1;
+    max-width: 625px;
+    padding: 40px 86px 0 50px;
+}
+
+
+.footer {
+    border-top: 1px solid #D6D6D6;
+    display: flex;
+    align-items: center;
+    padding: 19px 184px 20px 120px;
+    position: absolute;
+    background-color: #F8F8F8;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer button {
+    padding: 21px 50px 22px 50px;
+    background-color: #EC0002;
+    font-family: 'PT Root UI medium';
+    font-style: normal;
+    border: none;
+    font-size: 29px;
+    line-height: 37px;
+    color: #FFFFFF;
+    white-space: nowrap;
+}
+
+.description {
+    margin-left: 40px;
+    margin-right: 149px;
+}
+.description p {
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-size: 17px;
+    line-height: 21px;
+    color: #333333
+}
+
+.description p b {
+    font-family: 'PT Root UI bold'
+}
+
+.description p a {
+    text-decoration: none;
+    color: #065CC2;
+}
+
+.summary {
+    margin-right: 80px;
+}
+
+.summary span {
+    font-size: 22px;
+    line-height: 28px;
+    white-space: nowrap;
+}
+
+.result-price span {
+    font-family: 'PT Root UI medium';
+    font-style: normal;
+    font-size: 35px;
+    line-height: 44px;
+    white-space: nowrap;
+}
