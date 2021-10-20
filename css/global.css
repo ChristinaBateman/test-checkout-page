@@ -79,6 +79,43 @@ html {
     padding: 40px 86px 0 50px;
 }
 
+ .left-block h2 {
+    font-size: 29px;
+    line-height: 37px;
+    color: #333333;
+    font-family:'PT Root UI medium';
+ } 
+
+ .left-block .header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .left-block .header .actions {
+     display: flex;
+ }
+
+ .left-block .header button {
+    cursor: pointer;
+    border: 1px solid #D6D6D6;
+    border-radius: 4px;
+    margin-left: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px; 
+    height: 40px;
+    width: 40px;
+    color: #D6D6D6;
+    background-color: #fff;
+    text-align: center;
+ }
+
+ .left-block .header button:hover {
+    border: 1px solid #000;
+ }
+
 .right-block .title span {
     font-size: 29px;
     line-height: 37px;
