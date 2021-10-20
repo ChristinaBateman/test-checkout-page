@@ -299,3 +299,37 @@ button {
     width: 24px;
     height: 24px;
 }
+
+.payment {
+    margin-top: 30px;
+}
+
+.payment .payment-cards {
+    margin-top: 6px;
+    display: flex;
+}
+
+.payment .payment-cards .card {
+    background: #fff; 
+    white-space: nowrap; 
+}
+
+.payment .payment-cards .card:hover {
+    border: 1px solid #065CC2;
+    background: #FFFFFF;
+}
+
+.payment .payment-cards .card .title {
+    font-family: 'PT Root UI medium';
+    font-size: 22px;
+    line-height: 28px;
+    color: #333333;
+}
+
+.payment .payment-cards .card:hover .title {
+    color: #333333;
+}
+
+.payment .payment-cards .card .price {
+    color: #6E6E73;
+}
