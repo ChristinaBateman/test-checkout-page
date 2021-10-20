@@ -281,3 +281,21 @@ button {
     justify-content: space-between;
     margin-top: 30px;
 }
+
+.settings-block .checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 14px;
+}
+
+.settings-block .checkbox label {
+    font-size: 22px;
+    line-height: 28px;
+    color: #333333;
+}
+
+.settings-block .checkbox input {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+}
