@@ -9,7 +9,12 @@
 </head>
 <body>
     <div class="page"> 
-        <h1>Оформление заказа</h1>
+        <div class="page-header">
+            <h1>Оформление заказа</h1>
+            <div class="text-button">
+                ↑ Назад к корзине
+            </div>
+        </div>
         <div class="checkout">
             <div class="left-block">
                 <div class="header">
@@ -45,7 +50,7 @@
                         </div>
                     </div>
                     <div>
-                        <span>Выбрать новое место и способ</span>
+                        <span class="text-button">Выбрать новое место и способ</span>
                     </div>
                     <div class="delivery-date">
                         <div class="card">
@@ -61,7 +66,7 @@
                             </div>
                         </div>
                         <div>
-                            <span>Другие дата и время</span>
+                            <span class="text-button">Другие дата и время</span>
                         </div>
                     </div>    
 
@@ -75,8 +80,35 @@
                             <label for="contactless">Оставить у двери (бесконтактная доставка)</label>
                         </div>
                     </div>
+                    <div class="recepient-block">
+                        <h2>Получатель</h2>
+                        <div class="recepient-fields-wrapper">
+                            <div class="field">
+                                <div class="named-select">
+                                    <div class="name">Имя и фамилия</div>
+                                    <select>
+                                        <option value="volvo">Вольфганг Вениаминович Константинопольский</option>
+                                    </select>
+                                </div>
+                                <div class="text-button">
+                                    Новый получатель
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="named-select">
+                                    <div class="name">Телефон</div>
+                                    <select>
+                                        <option value="volvo">+7 910 234-56-78</option>
+                                    </select>
+                                </div>
+                                <div class="text-button">
+                                    Новый телефон
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="payment">
-                        <div><h2>Оплата</h2></div>
+                        <h2>Оплата</h2>
                         <div class="payment-cards">
                             <div class="card">
                                 <div>

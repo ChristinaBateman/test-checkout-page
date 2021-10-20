@@ -42,6 +42,34 @@ button {
     cursor: pointer;
 }
 
+select {
+    font-family: 'PT Root UI bold';
+    padding: 34px 58px 12px 14px;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.13px;
+    color: #333333;
+}
+
+.named-select {
+    position: relative;
+}
+
+
+.named-select .name{
+    position: absolute;
+    top: 8px;
+    left: 20px;
+
+}
+
+.text-button {
+    cursor: pointer;
+    font-size: 22px;
+    line-height: 28px;
+    color: #065CC2;
+}
+
 .card {
     cursor: pointer;
     flex: 1;
@@ -93,9 +121,15 @@ button {
     background-color: #F2F2F2;
 }
 
+.page-header {
+    padding: 0 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
 .page h1 {
-    margin-left: 42px;
     margin-top: 2px;
     font-family: 'PT Root UI medium';
     font-size: 35px;
@@ -298,6 +332,27 @@ button {
     margin-right: 10px;
     width: 24px;
     height: 24px;
+}
+
+.recepient-block {
+    margin-top: 30px;
+}
+
+.recepient-block .recepient-fields-wrapper {
+  display: flex;
+}
+
+.recepient-block .recepient-fields-wrapper .field {
+    margin-top: 14px;
+    margin-right: 14px;
+}
+
+.recepient-block .recepient-fields-wrapper .field select{
+    margin-bottom: 14px;
+}
+
+.recepient-block .recepient-fields-wrapper .field:last-child {
+    margin-right: 0;
 }
 
 .payment {
