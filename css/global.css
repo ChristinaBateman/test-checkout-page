@@ -31,10 +31,10 @@
 
 
 html {
-    height: 100vh;
+    height: 100%;
 }
 
- body, .page {
+ body {
     height: 100%;
 }
 
@@ -117,7 +117,7 @@ select {
 .page {
     display: flex;
     flex-direction: column;
-    padding: 48px 85px 0 77px;
+    padding: 48px 85px 248px 77px;
     background-color: #F2F2F2;
 }
 
@@ -143,13 +143,12 @@ select {
     margin-top: 19px;
     background: #FFFFFF;
     border: 1px solid #C5C5C5;
-    box-sizing: border-box;
     border-radius: 6px;
 }
 
 .checkout .left-block {
     flex: 1;
-    padding: 40px 82px 0 43px;
+    padding: 40px 82px 60px 43px;
     border-right: 1px solid #8C8C8C;
 }
 
