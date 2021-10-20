@@ -38,6 +38,53 @@ html {
     height: 100%;
 }
 
+button {
+    cursor: pointer;
+}
+
+.card {
+    cursor: pointer;
+    flex: 1;
+    margin-right: 14px;
+    display: flex;
+    padding: 20px;
+    background: #FFFFFF;
+    border: 1px solid #D6D6D6;
+    border-radius: 4px;
+}
+
+.card:last-child {
+    margin-right: 0;
+}
+
+.card:hover {
+    border: 1px solid #065CC2;
+}
+
+.card .title {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+    font-family:'PT Root UI medium';
+    color: #333333;
+}
+
+.card .description {
+    font-size: 22px;
+    line-height: 28px;
+    color: #333333;
+}
+
+.card .price {
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 28px;
+    color: #333333;
+}
 
 .page {
     display: flex;
@@ -57,7 +104,6 @@ html {
 }
 
 .checkout {
-    max-width: 1743px;
     display: flex;
     flex: 1;
     margin-top: 19px;
@@ -112,9 +158,9 @@ html {
     text-align: center;
  }
 
- .left-block .header button:hover {
+.left-block .header button:hover {
     border: 1px solid #000;
- }
+}   
 
 .right-block .title span {
     font-size: 29px;
@@ -173,11 +219,11 @@ html {
     white-space: nowrap;
 }
 
-.description {
+.footer .description {
     margin-left: 40px;
     margin-right: 149px;
 }
-.description p {
+.footer .description p {
     font-family: 'PT Root UI';
     font-style: normal;
     font-size: 17px;
@@ -185,11 +231,11 @@ html {
     color: #333333;
 }
 
-.description p b {
+.footer .description p b {
     font-family: 'PT Root UI bold';
 }
 
-.description p a {
+.footer .description p a {
     text-decoration: none;
     color: #065CC2;
 }
@@ -210,4 +256,28 @@ html {
     font-size: 35px;
     line-height: 44px;
     white-space: nowrap;
+}
+
+.content {
+    margin-top: 14px;
+}
+
+.content span {
+    font-size: 22px;
+    line-height: 28px;
+    color: #065CC2;
+}
+
+
+.delivery-adress {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+
+.delivery-date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
 }
