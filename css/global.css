@@ -61,6 +61,7 @@ select {
 
 
 .bold {
+    color: #333333;
     font-family: 'PT Root UI bold';
 }
 
@@ -160,15 +161,31 @@ select {
     border-radius: 6px;
 }
 
+
+@media (max-width: 1280px) {
+    .checkout {
+        flex-direction: column;
+    }
+}
+
+
 .checkout .left-block {
     flex: 1;
+    min-width: 600px;
     padding: 40px 82px 60px 43px;
     border-right: 1px solid #8C8C8C;
 }
 
+@media (max-width: 1280px) {
+    .checkout .left-block {
+        border-right: none;
+    }   
+}
+
 .checkout .right-block {
     flex: 1;
-    max-width: 625px;
+    min-width: 460px;
+    max-width: 600px;
     padding: 40px 86px 0 50px;
 }
 
@@ -255,6 +272,7 @@ select {
 }
 
 .footer button {
+    border-radius: 4px;
     padding: 21px 50px 22px 50px;
     background-color: #EC0002;
     font-family: 'PT Root UI medium';
@@ -264,12 +282,20 @@ select {
     line-height: 37px;
     color: #FFFFFF;
     white-space: nowrap;
+    margin-right: 40px;
 }
 
 .footer .description {
-    margin-left: 40px;
-    margin-right: 149px;
+    margin-right: 32px;
 }
+
+
+@media (max-width: 1440px) {
+    .footer .description {
+      display: none !important;
+    }
+  }
+
 .footer .description p {
     font-family: 'PT Root UI';
     font-style: normal;
@@ -318,11 +344,14 @@ select {
 
 .delivery-adress {
     display: flex;
+    overflow: auto;
     justify-content: space-between;
     margin-bottom: 14px;
 }
 
+
 .delivery-date {
+    overflow: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
