@@ -31,6 +31,7 @@
 
 
 html {
+    background-color: #F2F2F2;
     height: 100%;
 }
 
@@ -131,12 +132,15 @@ select {
 
 .page {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     padding: 48px 85px 248px 77px;
-    background-color: #F2F2F2;
 }
 
 .page-header {
+    width: 100%;
+    max-width: 1760px;
     padding: 0 42px;
     display: flex;
     justify-content: space-between;
@@ -145,6 +149,7 @@ select {
 
 
 .page h1 {
+    max-width: 1760px;
     margin-top: 2px;
     font-family: 'PT Root UI medium';
     font-size: 35px;
@@ -155,7 +160,8 @@ select {
 .checkout {
     display: flex;
     flex: 1;
-    margin-top: 19px;
+    max-width: 1760px;
+    margin: 19px auto;
     background: #FFFFFF;
     border: 1px solid #C5C5C5;
     border-radius: 6px;
@@ -261,14 +267,20 @@ select {
 
 .footer {
     border-top: 1px solid #D6D6D6;
-    display: flex;
-    align-items: center;
-    padding: 19px 184px 20px 120px;
     position: fixed;
     background-color: #F8F8F8;
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+
+.footer-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 20px 32px;
+    max-width: 1760px;
+    margin: 0 auto;
 }
 
 .footer button {
