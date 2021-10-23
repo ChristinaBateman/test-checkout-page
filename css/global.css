@@ -131,11 +131,19 @@ select {
 }
 
 .page {
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 48px 85px 248px 77px;
+}
+
+@media (max-width: 480px) {
+    .page {
+        padding: 0;
+        padding-bottom: 120px;
+    }
 }
 
 .page-header {
@@ -147,6 +155,21 @@ select {
     align-items: center;
 }
 
+@media (max-width: 480px) {
+    .page-header {
+        flex-direction: column-reverse;
+        white-space: nowrap;
+        margin-top: 40px;
+        margin-left: 16px;
+        align-items: flex-start;
+        padding-left: 16px;
+    }
+
+@media (max-width: 480px) {
+    .page-header .text-button {
+        margin-bottom: 8px;
+    }
+}
 
 .page h1 {
     max-width: 1760px;
@@ -155,6 +178,14 @@ select {
     font-size: 35px;
     line-height: 44px;
     color: #333333;
+}
+
+@media (max-width: 480px) {
+    .page h1 {
+        font-size: 27px;
+        line-height: 34px;
+
+    }
 }
 
 .checkout {
@@ -193,6 +224,12 @@ select {
     min-width: 460px;
     max-width: 600px;
     padding: 40px 86px 0 50px;
+}
+
+@media (max-width: 1280px) {
+    .checkout .right-block {
+        display: none;
+    }   
 }
 
  .left-block h2 {
@@ -283,26 +320,57 @@ select {
     margin: 0 auto;
 }
 
+@media (max-width: 480px) {
+    .button-wrapper {
+        display: flex;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-wrapper {
+        padding: 16px;
+    }
+}
+
 .footer button {
     border-radius: 4px;
     padding: 21px 50px 22px 50px;
     background-color: #EC0002;
     font-family: 'PT Root UI medium';
     font-style: normal;
-    border: none;
     font-size: 29px;
     line-height: 37px;
     color: #FFFFFF;
     white-space: nowrap;
     margin-right: 40px;
+    background: linear-gradient(0deg, #EC0002, #EC0002), linear-gradient(91.91deg, rgba(208, 38, 38, 0) 0%, #D02626 99.65%), #FF0000;
+    border: 1px solid #E01D1D;
+    box-sizing: border-box;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.04), 0px 2px 0px rgba(149, 135, 128, 0.4);
 }
+
+
+@media (max-width: 480px) {
+    .footer button {
+        font-size: 17px;
+        line-height: 21px;
+        width: 100%;
+        margin-right: 0;
+        background: linear-gradient(0deg, #EC0002, #EC0002), linear-gradient(91.91deg, rgba(208, 38, 38, 0) 0%, #D02626 99.65%), #FF0000;
+        border: 1px solid #E01D1D;
+        box-sizing: border-box;
+        box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.04), 0px 2px 0px rgba(149, 135, 128, 0.4);
+    }
+  }
+
 
 .footer .description {
     margin-right: 32px;
 }
 
 
-@media (max-width: 1440px) {
+@media (max-width: 1280px) {
     .footer .description {
       display: none !important;
     }
@@ -329,10 +397,52 @@ select {
     margin-right: 80px;
 }
 
+@media (max-width: 1280px) {
+    .summary {
+      display: none !important;
+    }
+  }
+
 .summary span {
     font-size: 22px;
     line-height: 28px;
     white-space: nowrap;
+}
+
+@media (max-width: 1280px) {
+    .result-price {
+      display: none !important;
+    }
+  }
+
+
+  .mobile-info {
+      display: none;
+  }
+
+  @media (max-width: 480px) {
+    .mobile-info {
+      display: flex;
+      justify-content: space-between;
+      margin: 16px 16px 0 16px;
+    }
+  }
+
+  .mobile-summary span {
+    font-family: 'PT Root UI medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #333333;
+  }
+
+.mobile-popup-text-button {
+    font-family: 'PT Root UI medium';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #065CC2
 }
 
 .result-price span {
