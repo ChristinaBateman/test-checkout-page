@@ -53,7 +53,16 @@ select {
     letter-spacing: 0.13px;
     color: #333333;
     border-radius: 4px;
+    width: 100%;
     border: 1px solid #D6D6D6;
+}
+
+
+@media (max-width: 480px) {
+    select {
+        font-size: 17px;
+        line-height: 20px;
+    }
 }
 
 .named-select {
@@ -107,6 +116,7 @@ select {
 @media (max-width: 480px) {
     .card {
         padding: 16px 20px;
+        margin-right: 8px;
     }
 }
 
@@ -544,13 +554,6 @@ select {
 }
 
 
-.content span {
-    font-size: 22px;
-    line-height: 28px;
-    color: #065CC2;
-}
-
-
 .delivery-adress {
     display: flex;
     overflow: auto;
@@ -570,11 +573,41 @@ select {
 }
 
 .delivery-date {
-    overflow: auto;
+    margin-top: 30px;
     display: flex;
     align-items: center;
+}
+
+
+.delivery-date-cards {
+    overflow-x: auto;
+    display: flex;
     justify-content: space-between;
-    margin-top: 30px;
+}
+
+.delivery-date-button {
+    margin-left: 30px;
+}
+
+@media (max-width: 480px) {
+    .delivery-date {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .delivery-date-button {
+        margin-top: 12px;
+        margin-left: 0;
+    }
+    
+}
+
+
+@media (max-width: 480px) {
+
+    .delivery-date .card {
+        min-width: 117px;
+    }
 }
 
 .settings-block .checkbox {
@@ -589,6 +622,13 @@ select {
     color: #333333;
 }
 
+@media (max-width: 480px) {
+    .settings-block .checkbox label {
+        font-size: 17px;
+        line-height: 21px;
+    }
+}
+
 .settings-block .checkbox input {
     margin-right: 10px;
     width: 24px;
@@ -601,6 +641,13 @@ select {
 
 .recepient-block .recepient-fields-wrapper {
   display: flex;
+}
+
+@media (max-width: 480px) {
+    .recepient-block .recepient-fields-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+      }
 }
 
 .recepient-block .recepient-fields-wrapper .field {
@@ -623,6 +670,24 @@ select {
 .payment .payment-cards {
     margin-top: 6px;
     display: flex;
+}
+
+@media (max-width: 480px) {
+    .payment .payment-cards {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-right: 16px;
+    }
+
+    .payment .payment-cards .card {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .payment .payment-cards .card .title { 
+        font-size: 17px !important;
+        line-height: 21px;
+    }
 }
 
 .payment .payment-cards .card {
