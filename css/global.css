@@ -262,6 +262,7 @@ select {
         width: 100%;
         flex-direction: column;
         border: none;
+        border-radius: 0;
     }
 }
 
@@ -559,6 +560,11 @@ select {
     overflow: auto;
     justify-content: space-between;
     margin-bottom: 14px;
+}
+
+
+.delivery-adress::-webkit-scrollbar {
+    display: none;
 }
 
 @media (max-width: 480px) {
