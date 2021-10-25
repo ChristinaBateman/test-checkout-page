@@ -400,6 +400,10 @@ select {
     display: none;
 }
 
+.mobile-popup-footer {
+    display: none;
+}
+
 @media (max-width: 480px) {
     .checkout .right-block {
         z-index: 10;
@@ -418,6 +422,7 @@ select {
     .checkout .right-block.show {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
     }
 
     .checkout .right-block .title {
@@ -456,8 +461,25 @@ select {
     .mobile-fields {
         display: block;
     }
-}
 
+    .mobile-popup-footer {
+        display: block;
+    }
+
+    .mobile-popup-footer .mobile-footer-button {
+        padding: 16px;
+    }
+
+    .mobile-footer-button button {
+        width: 100%;
+        padding: 16px 20px;
+        background: #FFFFFF;
+        border: 1px solid #D6D6D6;
+        box-sizing: border-box;
+        box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.04), 0px 2px 0px rgba(149, 135, 128, 0.4);
+        border-radius: 4px;
+    }
+}
 
 .footer {
     border-top: 1px solid #D6D6D6;
@@ -671,6 +693,10 @@ select {
     .delivery-date-button {
         margin-top: 12px;
         margin-left: 0;
+    }
+
+    .delivery-date-cards .card:last-child {
+        margin-right: 16px;
     }
     
 }
